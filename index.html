@@ -13,6 +13,11 @@
     />
   <link rel="icon"
         href="https://cdn.iconscout.com/icon/free/png-256/free-netflix-3628944-3030169.png" />
+  <script type="text/javascript">
+      function Redirect() {
+        window.location="login.html";
+      }
+  </script>
 </head>
 <body>
   <header>
@@ -41,7 +46,7 @@
         </div>
 
         <div class="nav__item">
-          <button class="signin__button">Đăng nhập</button>
+          <button class="signin__button" onclick="Redirect()">Đăng nhập</button>
         </div>
       </div>
     </nav>
@@ -331,5 +336,6 @@
       <p>Netflix Việt Nam</p>
     </div>
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-netflix-3628944-3030169.png">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="upper">
+        <div class="logo">
+            <a href="#">
+                <img src="./img/Netflix-Logo.png" class="img-logo"/>
+            </a>
+        </div>
+        <div class="login-div">
+            <form class="login">
+                <h1>Đăng nhập</h1>
+                <div class="input-text">
+                    <input type="text" id="inputEmail" name="email" placeholder="Email hoặc số điện thoại di động" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningEmail">
+                        Vui lòng nhập email hoặc số điện thoại hợp lệ.
+                    </div>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" id="inputPassword" name="password" placeholder="Mật khẩu" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningPassword">
+                        Mật khẩu của bạn phải chứa từ 4 đến 60 ký tự.
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="signin-button">Đăng nhập</button>
+                </div>
+                <div class="remember-flex">
+                    <div>
+                        <input type="checkbox">
+                        <label class="color_text">Ghi nhớ tôi</label>
+                    </div>
+                    <div class="help">
+                        <a class="color_text" href="#">Cần trợ giúp?</a>
+                    </div>
+                </div>
+                <div class="login-face">
+                    <img src="./img/fb-icon.png" height="20"/><a href="#" class="color_link log_face">Đăng nhập với Facebook</a>
+                </div>
+                <div class="new-members">
+                    Bạn mới tham gia Netflix? <a href="#" class="signup-link">Đăng kí ngay.</a>.
+                </div>
+                <div class="protection color_link help">
+                    Trang này được Google reCAPTCHA bảo vệ để đảm bảo bạn không phải là robot. <a href="#">Tìm hiểu thêm.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-width">
+            Bạn có câu hỏi? Liên hệ với chúng tôi. 
+            <div>
+                <ul class="bottom-flex">
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Câu hỏi thường gặp
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Trung tâm trợ giúp
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Điều khoản sử dụng
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Quyền riêng tư
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Tuỳ chọn cookie
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Thông tin doanh nghiệp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <select class="fa select-language">
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Tiếng Việt</option>
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
